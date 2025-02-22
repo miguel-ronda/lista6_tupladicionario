@@ -12,6 +12,6 @@ pais_selecao = input("Digite o nome de um país da lista acima: ")
 
 if pais_selecao in tupla_paises:
     i = tupla_paises.index(pais_selecao)
-    print("O índice do país {}} é: {}".index(tupla_paises,i))
+    print("O índice do país {} é: {}".index(tupla_paises,i))
 else:
     print("O país inserido não está na lista.")
