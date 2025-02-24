@@ -1,0 +1,24 @@
+#Faça um programa que o usuario insira 10 produtos numa tupla.
+#  Exiba todos os produtos, solicite ao usuário para digitar um nome de produto e exiba a posição dele, em seguida peça para digitar numero entre 0 e 9 e exiba o produto da tupla.
+print("miguel do amaral paes ronda")
+produto = ()
+adici_prod = list(produto)
+for i in range(10):
+    produto = input("insira o nome do produto; ")
+    adici_prod.append(produto)
+    produto = tuple(adici_prod)
+
+print(produto)
+nom = input("insira um nome de um produto; ")
+
+if nom in produto:
+    for i in range(len(produto)):
+        if produto[i] == nom:
+            print(i)
+
+else:
+    print("esse produto nao foi inserido")
+
+numero = int(input("insira um numero entre 0 e 9 "))
+print(produto[numero])
+
